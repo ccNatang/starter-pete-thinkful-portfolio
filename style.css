@@ -19,6 +19,15 @@ h3 {
 /* Header */
 header {
   text-align: center;
+
+}
+
+.flex-header {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  
 }
 
 /* Containers */
@@ -32,14 +41,43 @@ article {
   padding: 50px 0;
 }
 
+.flex-article-section {
+  display: flex;
+  text-align: left;
+  margin: auto;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+
+.flex-portfolio {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-st;
+}
+
+.flex-portfolio section {
+  flex: 1;
+}
+
+
 article div {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   width: 100%;
 }
 
 /* Paragraphs */
 p {
   line-height: 1.5;
+}
+
+#portfolio p {
+  font-size: 14px;
+  text-align: center;
 }
 
 /* Links */
@@ -76,3 +114,4 @@ footer {
 hr {
   border: 1px solid black;
 }
+
